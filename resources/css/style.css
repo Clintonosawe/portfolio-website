@@ -26,15 +26,24 @@ nav ul {
     gap: 20px; 
 }
 
+nav ul li { 
+    position: relative; 
+}
+
 nav ul li a {  
     color: #fff;
     text-decoration: none; 
     font-weight: bold;  
+    font-size: 18px; 
+    padding: 10px 15px; 
+    transition: color 0.3s ease, background-color 0.3s ease;
 }
 
 nav ul li a:hover { 
     color: #33CA7F;
-    text-decoration: underline;
+    border-radius: 5px; 
+    background-color: rgba(255, 255, 255, 0.2);
+
 }
 
 /* Home Section*/ 
