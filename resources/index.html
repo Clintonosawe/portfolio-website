@@ -13,9 +13,8 @@
         <h3>Web Developer</h3>
         <nav> 
             <ul> 
-                <li><a href="#">Home</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li><a href="#">About Me</a></li>
             </ul>
         </nav>
     </header>
@@ -24,13 +23,37 @@
         <div class="intro"> 
             <img src="images/professional-photo.png" alt="Clinton Osawe" class="profile-pic">
             <h2>Web Developer | Software Engineer</h2>
-            <p>Building sleek, modern websites tailored to startups with a strong focus on design and functionality. </p>
+            <p class="typewriter" id="typewriter"></p>
         </div>
     </section>
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous">
+    <script> 
+        const text = "Building sleek, modern websites tailored to startups with a strong focus on design and functionality."; 
+        const wordsToBold = ["websites", "startups", "design", "functionality"]; 
+        const textArray = text.split(" "); //Split into words 
+        let i = 0; 
+
+        function typeWriterEffect() { 
+            if (i < textArray.length) { 
+                let word = textArray[i]; 
+                // If the word is in the wordsToBold array, wrap it in <strong>
+                if (wordsToBold.includes(word.replace(/[^a-zA-Z]/g, ""))) { // Remove punctuation before checking
+                    word = `<strong>${word}</strong>`;
+                }
+                document.getElementById("typewriter").innerHTML += word + " ";
+                i++; 
+                setTimeout(typeWriterEffect, 200); // Adjust speed (100ms per second)
+            } else { 
+                setTimeout(resetText, 1000); // Wait 1 seconds, then reset
+            }
+        }
+
+        function resetText() {
+            document.getElementById("typewriter").innerHTML = ""; // Clear text
+            i = 0; // Reset index
+            setTimeout(typeWriterEffect, 500); // Restart typing after 500ms
+        }
+
+        typeWriterEffect(); // Start the typing effect
     </script>
 
 </body>
