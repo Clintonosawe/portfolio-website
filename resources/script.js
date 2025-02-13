@@ -1,35 +1,35 @@
-            // Script for navbar section 
-            document.addEventListener("DOMContentLoaded", function () { 
-                const logo = document.querySelector(".navbar-brand");
+// Script for navbar section
+document.addEventListener("DOMContentLoaded", function () { 
+    const logo = document.querySelector(".navbar-brand");
             
-                let scale = 1;
-                let growing = true;
-                let isAnimating = true;
+    let scale = 1;
+    let growing = true;
+    let isAnimating = true;
             
-                function animateLogo() {
-                    if (!isAnimating) return; // Stops animation if paused
+    function animateLogo() {
+        if (!isAnimating) return; // Stops animation if paused
             
-                    if (growing) {
-                        scale += 0.004;
-                        if (scale >= 1.1) growing = false;
-                    } else {
-                        scale -= 0.004;
-                        if (scale <= 1) growing = true;
-                    }
+        if (growing) {
+            scale += 0.004;
+            if (scale >= 1.1) growing = false;
+        } else {
+            scale -= 0.004;
+            if (scale <= 1) growing = true;
+        }
             
-                    logo.style.transform = `scale(${scale})`;
-                    requestAnimationFrame(animateLogo);
-                }
+        logo.style.transform = `scale(${scale})`;
+        requestAnimationFrame(animateLogo);
+    }
             
-                // Toggle animation on click
-                logo.addEventListener("click", function () {
-                    isAnimating = !isAnimating;
-                    if (isAnimating) animateLogo(); // Restart animation if resumed
-                });
+    // Toggle animation on click
+    logo.addEventListener("click", function () {
+        isAnimating = !isAnimating;
+        if (isAnimating) animateLogo(); // Restart animation if resumed
+    });
             
-                animateLogo(); // Start immediately on page load
+    animateLogo(); // Start immediately on page load
                 
-            });
+});
             
             
             
