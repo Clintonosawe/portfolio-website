@@ -1,70 +1,43 @@
 * { 
     margin: 0; 
     padding: 0; 
-    font-family: "Poppins", "sans-serif"; 
+    font-family: "Courier New", monospace; 
 }
 
 body { 
-    background-color: #F4F4F4; 
-    color: #333; 
-}
-
-header { 
-    background-color: #000; 
-    color: #fff; 
     display: flex; 
+    background-color: #1e1e1e; 
+    justify-content: center; 
     align-items: center; 
-    justify-content: space-between; 
-    padding: 20px; 
+    color: #dcdcdc; 
 }
 
-nav ul { 
-    display: flex; 
-    list-style-type: none; 
-    gap: 25px; 
+.navbar { 
+    height: 90px; 
 }
 
-nav ul li { 
+.navbar-nav .nav-link { 
     position: relative; 
+    color: #bbb; 
+    transition: color 0.3s
+} 
+
+.navbar-nav .nav-link:hover { 
+    color: #0096FF; 
 }
 
-nav ul li a { 
-    color: #fff; 
-    text-decoration: none; 
-    font-weight: bold; 
-    font-size: 18px; 
-    transition: color 0.3s ease, background-color 0.3s ease; 
+.navbar-nav .nav-link::after { 
+    content: "";
+    position: absolute; 
+    left: 50%; 
+    bottom: -4px; 
+    width: 0; 
+    height: 2px; 
+    background: #0096FF; 
+    transition: all 0.3s ease; 
+    transform: translateX(-50%); 
 }
 
-nav ul li a:hover { 
-    color: #C4D3D3;
-}
 
-/*Home Section */ 
-#home { 
-    text-align: center; 
-    padding: 75px 0px; 
-}
 
-.profile-pic { 
-    width: 200px; 
-    height: 200px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.75);
-    margin-bottom: 20px; 
-    border-radius: 50%; 
-}
 
-.intro h2 { 
-    font-size: 24px; 
-    padding-bottom: 10px; 
-}
-
-.intro p { 
-    font-size: 16px; 
-    font-style: italic; 
-}
-
-.typewriter { 
-   white-space: nowrap; 
-   overflow: hidden; 
-}
