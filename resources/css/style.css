@@ -12,10 +12,6 @@ body {
     color: #dcdcdc; 
 }
 
-.navbar { 
-    height: 90px; 
-}
-
 .navbar-nav .nav-link { 
     position: relative; 
     color: #bbb; 
