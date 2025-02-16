@@ -23,7 +23,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
                 <ul class="navbar-nav ms-auto"> 
                     <li class="nav-item"> 
-                        <a class="nav-link active me-4" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active me-4" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item"> 
                         <a class="nav-link active me-4" href="#">About</a>
@@ -42,48 +42,60 @@
         </div>
     </nav>
     <!-- Home Section -->
-     <section class="home"> 
+    <section class="home"> 
         <div class="container"> 
-            <!-- Left Side: Introduction -->
-             <div class="intro"> 
-                <h1>> Hello, I'm <span class="highlight">Clinton Osawe<span class="cursor-1"></span></span></h1>
-                <p class="subtitle">Software Developer | UI/UX Designer | Mobile Developer</p>
-                <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Courier+New&size=22&pause=1000&color=DCDCDC&width=600&lines=I'M PROFICIENT IN...;Python | JavaScript | SQL | SWIFT | KOTLIN" alt="Typing SVG" /></a>
-            </div>
-            <div class="link-icons-1"> 
-                <a target="_blank" href="https://www.linkedin.com/in/Clintonosawe/"><i class="fa-brands fa-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/Clintonosawe"><i class="fa-brands fa-github"></i></a>
-                <a target="_blank" href="https://https://www.instagram.com/clint_osawe/"><i class="fa-brands fa-instagram"></i></a>
+            <div class="row align-items-center gx-lg-5 gy-4">
+                <!-- Introduction Column -->
+                <div class="col-lg-6 order-lg-1 mb-md-4"> 
+                    <div class="intro pt-md-3"> 
+                        <h1>Hello, I'm <span class="highlight">Clinton Osawe</span></h1>
+                        <p class="subtitle">Software Developer | UI/UX Designer | Mobile Developer</p>
+                        <div class="skills-badge">
+                            Skills: Python | JavaScript | SQL | Swift | Kotlin
+                        </div>
+                        <div class="link-icons-1"> 
+                            <a target="_blank" href="https://www.linkedin.com/in/Clintonosawe/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank" href="https://github.com/Clintonosawe"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" href="mailto:osaweclinton1@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/clint_osawe/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>  
+                    </div>
+                </div>
+                
+                <!-- Terminal Column -->
+                <div class="col-lg-6 order-lg-2 mt-lg-0 mt-md-3"> 
+                    <header class="terminal">
+                        <div class="terminal-bar">
+                            <div class="buttons">
+                                <span class="circle red"></span>
+                                <span class="circle yellow"></span>
+                                <span class="circle green"></span>
+                            </div>
+                            <span class="title">clinton@portfolio: ~</span>
+                        </div>
+                        <div class="terminal-body">
+                            <p><span class="command">> Clinton.currentLocation</span></p>
+                            <p class="response">"Waterloo, ON"</p>
+                            <p class="response">["<a target="_blank" href="mailto:osaweclinton1@gmail.com">osaweclinton1@gmail.com</a>", 
+                                "<a href="https://www.linkedin.com/in/Clintonosawe/" target="_blank">LinkedIn</a>", 
+                                "<a href="https://github.com/Clintonosawe" target="_blank">GitHub</a>"]</p>
+                            <p><span class="command">> Clinton.skills</span></p>
+                            <p class="response">["Python", "JavaScript", "React", "Swift", "Node.js", "SQL", "Kotlin"]</p>
+                            <p><span class="command">> Clinton.interests</span></p>
+                            <p class="response">["Software Development", "Mobile Development", "Cybersecurity", "Network Engineering"]</p>
+                            <p><span class="command">> Clinton.education</span></p>
+                            <p class="response">"B.Sc. Honors Computer Science - Wilfrid Laurier University"</p>
+                            <p><span class="command">> _</span> <span class="cursor">█</span></p>
+                        </div>
+                    </header> 
+                </div>
             </div>
         </div>
     </section>
-    <header class="terminal">
-        <div class="terminal-bar">
-            <div class="buttons">
-                <span class="circle red"></span>
-                <span class="circle yellow"></span>
-                <span class="circle green"></span>
-            </div>
-            <span class="title">clinton@portfolio: ~</span>
-        </div>
-        <div class="terminal-body">
-            <p><span class="command">> Clinton.currentLocation</span></p>
-            <p class="response">"Waterloo, ON"</p>
-    
-            <p class="response">["<a target="_blank" href="mailto: osaweclinton1@gmail.com">osaweclinton1@gmail.com</a>", 
-                "<a href="https://www.linkedin.com/in/Clintonosawe/" target="_blank">LinkedIn</a>", "<a href="https://github.com/Clintonosawe" target="_blank">GitHub</a>"]</p>
-            <p><span class="command">> Clinton.skills</span></p>
-            <p class="response">["Python", "JavaScript", "REACT", "SWIFT", "Node.js", "SQL", "ROTLIN"]</p>
-    
-            <p><span class="command">> Clinton.interests</span></p>
-            <p class="response">["Software Development", "Mobile Development", "Cybersecurity", "Network Engineering"]</p>
-    
-            <p><span class="command">> Clinton.education</span></p>
-            <p class="response">"B.Sc. Honors Computer Science - Wilfrid Laurier University"</p>
-    
-            <p><span class="command">> _</span> <span class="cursor">█</span></p>
-        </div>
-    </header>    
+    <!-- About Section -->
+     <section class="about- py-5" id="about"> 
+        
+     </section>
     <script src="script.js"></script>
 </body>
 </html>
