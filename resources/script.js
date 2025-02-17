@@ -31,6 +31,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 
 });
             
+document.addEventListener("DOMContentLoaded", function () {
+    const services = document.querySelectorAll(".service-card");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("fade-in");
+            }
+        });
+    }, { threshold: 0.3 });
+
+    services.forEach(service => {
+        observer.observe(service);
+    });
+});
+
             
             
             
