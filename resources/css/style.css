@@ -42,6 +42,12 @@ body {
     color: #0096FF; 
 }
 
+:target::before {
+    content: "";
+    display: block;
+    height: 80px;  /* Adjust based on your navbar height */
+    margin-top: 50px;  /* Matches the navbar height */
+}
 
 /* Home Section */ 
 .home { 
@@ -370,6 +376,55 @@ body {
     box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
     z-index: 10;
 }
+.tech-section { 
+    background: linear-gradient(135deg, #161b22, #1d2028); 
+    padding: 1.5rem; 
+    border-radius: 12px; 
+    box-shadow: 0 0 15px rgba(0, 255, 153, 0.1); 
+    text-align: center; 
+    margin-top: 40px; 
+}
+
+/* Tech Stack Items */ 
+.tech-stack .col-3 { 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    padding: 10px; 
+    border-radius: 10px; 
+    cursor: pointer; 
+}
+
+/* Hover Effect */
+.tech-stack .col-3:hover { 
+    transform: translateY(-5px) scale(1.1); 
+    box-shadow: 0 0 20px rgba(0, 255, 153, 0.3); 
+}
+
+/* Icon Hover Glow */ 
+.tech-stack .col-3 i { 
+    transition: color 0.3s ease, text-shadow 0.3s ease; 
+}
+
+.tech-stack .col-3:hover i { 
+    color: #00ff99; 
+    text-shadow: 0 0 12px rgba(0, 255, 153, 0.8); 
+}
+
+/* Subtle Pulsating Effect */
+@keyframes pulse { 
+    0%, 100% { 
+        transform: scale(1); 
+        text-shadow: 0 0 5px rgba(0, 255, 153, 0.3); 
+    }
+    50% { 
+        transform: scale(1.05); 
+        text-shadow: 0 0 15px rgba(0, 255, 153, 0.5); 
+    }
+}
+
+.tech-stack .col-3 i { 
+    animation: pulse 2s infinite; 
+}
+
 .text-light { 
     padding-top: 25px; 
 }
