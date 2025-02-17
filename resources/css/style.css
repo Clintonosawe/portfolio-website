@@ -51,7 +51,7 @@ body {
 
 .container {
     width: 100%; /* Ensures full width */
-    max-width: 1200px; /* Keeps original max width */
+    max-width: 1250px; /* Keeps original max width */
     margin: 0 auto; /* Centers the container */
     display: block; /* Prevents Bootstrap flex interference */
 }
@@ -174,7 +174,7 @@ body {
         font-size: 2rem; 
         line-height: 1.1; 
         margin-bottom: 0.8rem;  
-        margin-top: 2.2rem; 
+        margin-top: 1rem; 
     }
     .subtitle { 
         font-size: 1.1rem; 
@@ -253,5 +253,175 @@ body {
         padding: 1.5rem; 
     }
 }
+/* About Section */ 
+.about {
+    background: linear-gradient(45deg, #191b22, #1d1f28);
+    border-top: 1px solid #2d333b;
+    position: relative;
+    overflow: hidden;
+}
 
-/* About Section Styling */ 
+.profile-card {
+    background: #161b22;
+    border: 1px solid #2d333b;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+.profile-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, 
+        rgba(0, 255, 153, 0.1) 0%, 
+        rgba(0, 255, 153, 0) 70%);
+    animation: pulse-glow 3s infinite;
+}
+
+.profile-img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid #00ff99;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+.section-title {
+    font-size: 1.75rem;
+    border-left: 3px solid #ffcc00;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.command-prompt {
+    color: #00ff99;
+    margin-right: 0.5rem;
+}
+
+.terminal-style {
+    border: 1px solid #373e47;
+    background: linear-gradient(145deg, #161b22, #1d2028);
+    position: relative;
+}
+
+.corner-decoration {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #00ff99;
+    top: 10px;
+    right: 10px;
+    opacity: 0.3;
+}
+
+.line-highlight {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.line-highlight::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, #00ff99, transparent);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -4px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background: #00ff99;
+    border-radius: 50%;
+    border: 2px solid #191b22;
+    box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
+}
+
+.tech-item {
+    padding: 1rem;
+    border: 1px solid #373e47;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.tech-item:hover {
+    transform: translateY(-5px);
+    border-color: #00ff99;
+    background: rgba(0, 255, 153, 0.05);
+}
+
+.skill-tags .badge {
+    font-size: 0.9rem;
+    padding: 0.7em 1.2em;
+    border-radius: 25px;
+    transition: all 0.2s ease;
+    background: #00ff99;
+}
+
+.skill-tags .badge:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px currentColor;
+}
+
+.hover-glow {
+    transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.3);
+}
+
+@keyframes pulse-glow {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .timeline-content {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-card {
+        padding: 1.5rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+    
+    .skill-tags .badge {
+        font-size: 0.85rem;
+    }
+}

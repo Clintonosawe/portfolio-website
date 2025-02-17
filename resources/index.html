@@ -92,45 +92,112 @@
             </div>
         </div>
     </section>
+    
     <!-- About Section -->
-     <section class="about py-5" id="about"> 
-        <div class="container"> 
+    <section class="about py-5" id="about">
+        <div class="container">
             <div class="row g-5 align-items-stretch">
                 <!-- Profile Column -->
-                 <div class="col-12 col-md-5 col-lg-4"> 
-                    <div class="profile-card text-center h-100 d-flex flex-column justify-content-between"> 
-                        <img src="professional-photo-2.jpg" alt="Clinton Osawe" 
-                            class="profile-img rounded-circle mb-4 shadow-lg"> 
-                        <h3 class="text-cyan mb-3">Cllinton Osawe</h3>
-                        <p class="text-cyan mb-3">B.Sc. Computer Science</p>
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="profile-card text-center h-100 d-flex flex-column justify-content-between">
+                        <div class="profile-content">
+                            <div class="img-wrapper mb-4">
+                                <img src="./images/professional-photo-2.jpg" alt="Clinton Osawe" 
+                                class="profile-img rounded-circle mb-4 shadow-lg">
+                            </div>
+                            <h3 class="text-cyan mb-2">Clinton Osawe</h3>
+                            <p class="text-light opacity-75 mb-4">B.Sc. Computer Science</p>
+                            <div class="achievement-badge mb-4">
+                                <span class="badge bg-dark text-yellow border border-yellow">Research Assistant</span>
+                            </div>
+                        </div>
+                        <a href="resume.pdf" class="btn btn-outline-warning btn-lg mx-auto mt-3" download>
+                            <i class="fas fa-download me-2"></i>Download Resume
+                        </a>
                     </div>
-                    <a href="resume.pdf" class="btn btn-outline-warning btn-lg mx-auto" download> 
-                        <i class="fas fa-download me-2"></i>Download Resume
-                    </a>
-                 </div> 
-            </div>
-            <!-- Content Column-->
-            <div class="col-12 col-md-7 col-lg-8"> 
-                <div class="content wrapper">
-                    <div class="terminal-style bg-dark p-4 rounded-3 mb-4">
-                        <h2 class="section-title mb-3">> About Me</h2>
-                        <p class="lead mb-0"> 
-                            Hi, I'm Clinton Osawe, a third-year B.Sc. at Wilfrid Laurier University 
-                            with a strong passion for Software and Mobile Development. I'm currently conducting research with 
-                            my prof for my Operating Systems course, diving into system optimization and low-level computing concepts. 
-                            I'm currently seeking paid/unpaid internships and job opportunities to enhance my skills and broaden my expertise
-                            Let's connect and build something together!
-                        </p>
-                    </div>
-                    <div class="row g-4"> 
-                        <!--Experience Column -->
-                        <div class="col-12 col-lg-6"> 
-                            <div class="experience-card bg-dark p-4 rounded-3 h-100"> 
-                                <h3 class="text-cyan mb-3"><i class="fas fa-briefcase me-2">Journey</i></h3>
-                                <div class="timeline"> 
-                                    <div class="timeline-item-mb-4"> 
-                                        <div class="timeline-header"> 
-                                            <span class="badge bg-yellow text-dark me-2">2023</span>
+                </div>
+ 
+                <!-- Content Column -->
+                <div class="col-12 col-md-7 col-lg-8">
+                    <div class="content-wrapper">
+                        <div class="terminal-style bg-dark p-4 rounded-3 mb-4 glow-b">
+                            <h2 class="section-title mb-3">> About Me</h2>
+                            <p class="lead text-light opacity-85">
+                                Hi, my name is Clinton Osawe, I'm a third-year B.Sc. at Wilfrid Laurier University 
+                                with a strong passion for Software and Mobile Development. I'm currently conducting research with 
+                                my prof for my Operating Systems course, diving into system optimization and low-level computing concepts. 
+                                I'm currently seeking paid/unpaid internships and job opportunities to enhance my skills and broaden my expertise.
+                                Let's connect and build something together!
+                            </p>
+                        </div>
+                        <div class="row g-4"> 
+                            <!--Experience Column -->
+                            <div class="col-12 col-lg-6"> 
+                                <div class="experience-card bg-dark p-4 rounded-3 h-100 glow-border"> 
+                                    <h3 class="text-cyan mb-3"><i class="fas fa-rocket me-2">Professional Journey</i></h3>
+                                    <div class="timeline"> 
+                                        <div class="timeline-item mb-4"> 
+                                            <div class="timeline-header d-flex align-items-center mb-2"> 
+                                                <span class="badge bg-yellow text-dark me-2">2023-2024</span>
+                                                <h5 class="text-light mb-0">AI Research Intern @VectorInstitute</h5>
+                                            </div>
+                                            <div class="timeline-content ps-4"> 
+                                                <p class="text-muted mb-1 fw-bold">@Vector Institute</p>
+                                                <p class="text-light opacity-85 small">
+                                                    During my research internship, I contributed to a project which involved integrating hardware,
+                                                    acceleration, machine learning, and bioinformatics, focusing on scalable DNA
+                                                    barcoding algorithms to enhance efficiency in large-scale biological data analysis. 
+                                                </p>
+                                            </div>
+                                        </div>
+                                       <!-- Timeline Item 2 -->
+                                        <div class="timeline-item">
+                                            <div class="timeline-marker"></div>
+                                            <div class="timeline-content ps-4">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="badge bg-yellow text-dark me-2">2025-Present</span>
+                                                    <h5 class="text-light mb-0">OS Researcher</h5>
+                                                </div>
+                                                <p class="text-muted mb-1 fw-bold">@ WLU</p>
+                                                <p class="text-light opacity-85 small">
+                                                    • Linux kernel memory optimization<br>
+                                                    • Virtualization & resource scheduling<br>
+                                                    • C-based performance benchmarking
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Skills Column -->
+                            <div class="col-12 col-lg-6"> 
+                                <div class="skills-card bg-dark p-4 rounded-3 h-100"> 
+                                    <h3 class="text-cyan mb-3"><i class="fas fa-tools me-2">Expertise</i></h3>
+                                    <div class="skill-tags d-flex flex-wrap gap-2"> 
+                                        <span class="badge bg-cyan text-dark">Frontend Development</span>
+                                        <span class="badge bg-yellow text-dark">Backend Development</span>
+                                        <span class="badge bg-purple text-dark">Mobile Architecture</span>
+                                        <span class="badge bg-green text-dark">Cloud Infrastructure</span>
+                                    </div>
+                                    <div class="tech-section">
+                                        <h4 class="text-light mb-3"><i class="fas fa-code me-2">Tech Stack</i></h4>
+                                        <div class="tech-stack row g-3"> 
+                                            <div class="col-3 text-center">
+                                                <i class="fab fa-python fa-2x text-yellow"></i>
+                                                <div class="d-block text-muted small mt-1">Python</div>
+                                            </div>
+                                            <div class="col-3 text-center">
+                                                <i class="fab fa-js-square fa-2x text-yellow"></i>
+                                                <div class="text-muted small mt-1">JavaScript</div>
+                                            </div>
+                                            <div class="col-3 text-center">
+                                                <i class="fab fa-react fa-2x text-yellow"></i>
+                                                <span class="d-block text-muted small mt-1">React</span>
+                                            </div>
+                                            <div class="col-3 text-center">
+                                                <i class="fab fa-node-js fa-2x text-yellow"></i>
+                                                <span class="d-block text-muted small mt-1">Node.js</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -140,7 +207,7 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
