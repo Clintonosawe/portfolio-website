@@ -1,3 +1,15 @@
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll(".fade-in");
+
+    elements.forEach((el) => {
+        setTimeout(() => {
+            el.classList.add("visible");
+        }, 100);
+    });
+});
+
 // Script for navbar section
 document.addEventListener("DOMContentLoaded", function () { 
     const logo = document.querySelector(".navbar-brand");
@@ -30,22 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
     animateLogo(); // Start immediately on page load
                 
 });
+
             
-document.addEventListener("DOMContentLoaded", function () {
-    const services = document.querySelectorAll(".service-card");
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add("fade-in");
-            }
-        });
-    }, { threshold: 0.3 });
-
-    services.forEach(service => {
-        observer.observe(service);
-    });
-});
 
             
             
