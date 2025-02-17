@@ -296,15 +296,15 @@ body {
 
 .section-title {
     font-size: 1.75rem;
-    border-left: 3px solid #ffcc00;
+    border-bottom: 3px solid #ffcc00;
     padding-left: 1rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.3rem;
     letter-spacing: 0.5px;
     position: relative;
 }
 
 .command-prompt {
-    color: #00ff99;
+    color: #ffcc00;
     margin-right: 0.5rem;
 }
 
@@ -312,6 +312,15 @@ body {
     border: 1px solid #373e47;
     background: linear-gradient(145deg, #161b22, #1d2028);
     position: relative;
+}
+
+.terminal-style::after {
+    content: ">";
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #ffcc00;
+    font-size: 1.2em;
 }
 
 .corner-decoration {
@@ -344,18 +353,26 @@ body {
     padding-left: 1.5rem;
 }
 
+.timeline-item { 
+    position: relative; 
+}
+
 .timeline-marker {
     position: absolute;
-    left: -4px;
-    top: 5px;
+    left: -20px;
+    top: 35px;
+    transform: translateY(-50%);
     width: 14px;
     height: 14px;
     background: #00ff99;
     border-radius: 50%;
     border: 2px solid #191b22;
     box-shadow: 0 0 8px rgba(0, 255, 153, 0.3);
+    z-index: 10;
 }
-
+.text-light { 
+    padding-top: 25px; 
+}
 .tech-item {
     padding: 1rem;
     border: 1px solid #373e47;
@@ -375,7 +392,6 @@ body {
     padding: 0.7em 1.2em;
     border-radius: 25px;
     transition: all 0.2s ease;
-    background: #00ff99;
 }
 
 .skill-tags .badge:hover {
@@ -425,3 +441,22 @@ body {
         font-size: 0.85rem;
     }
 }
+.bg-cyan { background: #00ff99; }
+.bg-yellow { background: #ffcc00; }
+.bg-purple { background: #9d4edd; }
+.bg-green { background: #27c93f; }
+
+.btn-outline-warning {
+    border-color: #ffcc00;
+    color: #ffcc00;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-warning:hover {
+    background: #ffcc00;
+    color: #191b22;
+    transform: translateY(-2px);
+}
+
+.text-cyan { color: #00ff99; }
+.text-yellow { color: #ffcc00; }
