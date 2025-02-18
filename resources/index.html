@@ -32,7 +32,7 @@
                         <a class="nav-link active me-4" href="#services">Services</a>
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link active me-4" href="#">Projects</a>
+                        <a class="nav-link active me-4" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item"> 
                         <a class="nav-link active me-4" href="#">Contact</a>
@@ -94,7 +94,7 @@
     </section>
     
     <!-- About Section -->
-    <section class="about py-5" id="about">
+    <section class="about py-5 fade-in-section" id="about">
         <div class="container">
             <div class="row g-5 align-items-stretch">
                 <!-- Profile Column -->
@@ -208,19 +208,19 @@
         </div>
     </section>
     <!-- Services Section -->
-    <section class="services" id="services">
+    <section class="services fade-in-section" id="services">
         <div class="container">
             <h2 class="section-title text-cyan text-center">Everything You Need for a Perfect Website</h2>
             <div class="services-grid">
                 <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3 class="service-title">Business Strategy</h3>
+                    <p class="service-text">Discuss your goals and place strategies on your website to help you achieve them.</p>
+                </div>
+                <div class="service-card">
                     <div class="service-icon"><i class="fas fa-search"></i></div>
                     <h3 class="service-title">Website Review</h3>
                     <p class="service-text">I make sure your website is performing at its best by thoroughly reviewing it before making any changes.</p>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon"><i class="fas fa-sitemap"></i></div>
-                    <h3 class="service-title">Business Strategy</h3>
-                    <p class="service-text">We discuss your goals and place strategies on your website to help you achieve them.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
@@ -241,6 +241,53 @@
                     <div class="service-icon"><i class="fas fa-headset"></i></div>
                     <h3 class="service-title">Ongoing Support</h3>
                     <p class="service-text">Your website is always growing. Whether adding features or making improvements, I’m here to help.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects fade-in-section" id="projects">
+        <div class="container">
+            <h2 class="section-title text-cyan text-center">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3 class="project-title">AI Chatbot</h3>
+                    <p class="project-short-description">An AI-powered chatbot designed to enhance customer service and automate responses.</p>
+                    <button class="more-info-btn" onclick="toggleDetails(this)">More Info</button>
+                    <div class="project-details">
+                        <p>Built using Python and NLP techniques, this chatbot can analyze user input and provide relevant responses. It supports multiple languages and integrates with APIs for real-time data retrieval.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3 class="project-title">Task Manager Web App</h3>
+                    <p class="project-short-description">A simple task management app with user authentication and task tracking.</p>
+                    <button class="more-info-btn" onclick="toggleDetails(this)">More Info</button>
+                    <div class="project-details">
+                        <p>Developed with React.js and Node.js, this web app allows users to create, edit, and delete tasks. It features a clean UI with drag-and-drop task management.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-short-description">An online marketplace with secure payment integration and user dashboards.</p>
+                    <button class="more-info-btn" onclick="toggleDetails(this)">More Info</button>
+                    <div class="project-details">
+                        <p>Built using Express.js, MongoDB, and Stripe API, this e-commerce platform supports secure transactions, product filtering, and user authentication.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-short-description">A sleek, responsive portfolio website showcasing my skills and projects.</p>
+                    <button class="more-info-btn" onclick="toggleDetails(this)">More Info</button>
+                    <div class="project-details">
+                        <p>Designed with HTML, CSS, and JavaScript, this portfolio website features smooth animations, interactive elements, and a dark-themed UI for a professional look.</p>
+                    </div>
                 </div>
             </div>
         </div>
