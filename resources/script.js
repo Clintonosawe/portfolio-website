@@ -72,6 +72,10 @@ function toggleDetails(button) {
     }
 }
 
+/* Script to Dynamically Set the Year */
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("year").textContent = new Date().getFullYear();
+});
 
             
 

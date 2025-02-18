@@ -35,7 +35,7 @@
                         <a class="nav-link active me-4" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item"> 
-                        <a class="nav-link active me-4" href="#">Contact</a>
+                        <a class="nav-link active me-4" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -47,8 +47,8 @@
             <div class="row align-items-center gx-lg-5 gy-4">
                 <!-- Introduction Column -->
                 <div class="col-lg-6 order-lg-1 mb-md-4"> 
-                    <div class="intro pt-md-3"> 
-                        <h1>Hello, I'm <span class="highlight">Clinton Osawe</span></h1>
+                    <div class="intro pt-md-3 "> 
+                        <h1>Hello, I'm <span class="highlight fw-bold">Clinton Osawe</span></h1>
                         <p class="subtitle">Software Developer | UI/UX Designer | Mobile Developer</p>
                         <div class="skills-badge fade-in">
                             Skills: Python | JavaScript | REACT | NODE.js | Express.js | SQL | Swift | Kotlin | C++ | Java 
@@ -252,7 +252,7 @@
             <div class="projects-grid">
                 <!-- Project 1 -->
                 <div class="project-card">
-                    <h3 class="project-title">AI Chatbot</h3>
+                    <h3 class="project-title">AI Chatbot (WORKING ON!)</h3>
                     <p class="project-short-description">An AI-powered chatbot designed to enhance customer service and automate responses.</p>
                     <button class="more-info-btn" onclick="toggleDetails(this)">More Info</button>
                     <div class="project-details">
@@ -292,6 +292,42 @@
             </div>
         </div>
     </section>
+    <!-- Contact Section -->
+    <section class="contact fade-in-section" id="contact">
+        <div class="container">
+            <h2 class="section-title text-cyan text-center">Get in Touch</h2>
+            <p class="contact-text">Feel free to reach out! Whether you have a project idea or just want to say hi, my inbox is always open.</p>
+            
+            <div class="contact-form">
+                <form action="https://formspree.io/f/mwpvwyrq" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/Clintonosawe/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Clintonosawe" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:osaweclinton1@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Clinton Osawe. All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
